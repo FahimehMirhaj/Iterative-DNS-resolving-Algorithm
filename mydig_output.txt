@@ -1,0 +1,70 @@
+Fahimeh Mirhaj
+Fundamentals of Computer Networks
+Assignment #1
+
+Example(1):
+	- Command: java -jar myDig.jar google.com NS
+	- Result:
+		;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 52607
+		;; flags: qr aa rd ; qd: 1 an: 4 au: 0 ad: 4 
+		;; QUESTIONS:
+		;;	google.com., type = NS, class = IN
+
+		;; ANSWERS:
+		google.com.		345600	IN	NS	ns1.google.com.
+		google.com.		345600	IN	NS	ns2.google.com.
+		google.com.		345600	IN	NS	ns3.google.com.
+		google.com.		345600	IN	NS	ns4.google.com.
+
+		;; AUTHORITY RECORDS:
+
+		;; ADDITIONAL RECORDS:
+		ns1.google.com.		345600	IN	A	216.239.32.10
+		ns2.google.com.		345600	IN	A	216.239.34.10
+		ns3.google.com.		345600	IN	A	216.239.36.10
+		ns4.google.com.		345600	IN	A	216.239.38.10
+
+		;; Message size: 164 bytes
+
+Example (2):
+	- Command: java -jar myDig.jar google.com A
+	- Result:
+		;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 43086
+		;; flags: qr aa rd ; qd: 1 an: 1 au: 0 ad: 0 
+		;; QUESTIONS:
+		;;	google.com., type = A, class = IN
+
+		;; ANSWERS:
+		google.com.		300	IN	A	216.58.219.206
+
+		;; AUTHORITY RECORDS:
+
+		;; ADDITIONAL RECORDS:
+
+		;; Message size: 44 bytes
+
+Example (3):
+	- Command: java -jar myDig.jar google.com MX
+	- Result:
+		;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 32404
+		;; flags: qr aa rd ; qd: 1 an: 5 au: 0 ad: 5 
+		;; QUESTIONS:
+		;;	google.com., type = MX, class = IN
+
+		;; ANSWERS:
+		google.com.		600	IN	MX	10 aspmx.l.google.com.
+		google.com.		600	IN	MX	50 alt4.aspmx.l.google.com.
+		google.com.		600	IN	MX	30 alt2.aspmx.l.google.com.
+		google.com.		600	IN	MX	40 alt3.aspmx.l.google.com.
+		google.com.		600	IN	MX	20 alt1.aspmx.l.google.com.
+
+		;; AUTHORITY RECORDS:
+
+		;; ADDITIONAL RECORDS:
+		aspmx.l.google.com.	293	IN	A	74.125.22.26
+		alt4.aspmx.l.google.com.	293	IN	A	173.194.65.26
+		alt2.aspmx.l.google.com.	293	IN	A	74.125.24.26
+		alt3.aspmx.l.google.com.	293	IN	A	74.125.71.26
+		alt1.aspmx.l.google.com.	293	IN	A	64.233.190.26
+
+		;; Message size: 216 bytes
